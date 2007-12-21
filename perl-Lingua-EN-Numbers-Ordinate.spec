@@ -12,6 +12,7 @@ Url:		http://www.cpan.org/
 Source:		http://search.cpan.org/CPAN/authors/id/S/SB/SBURKE/%{module}-%{version}.tar.bz2
 #Requires:	perl
 BuildRequires:	perl-devel >= 0:5.600
+BuildRoot: 	%{_tmppath}/%{name}-buildroot
 BuildArch:	noarch
 
 %description
