@@ -1,6 +1,6 @@
 %define module	Lingua-EN-Numbers-Ordinate
 %define version 1.02
-%define release %mkrel 3
+%define release %mkrel 4
 
 Summary:	Go from cardinal number (3) to ordinal ("3rd")
 Name: 		perl-%{module}
