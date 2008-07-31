@@ -1,6 +1,6 @@
 %define module	Lingua-EN-Numbers-Ordinate
 %define version 1.02
-%define release %mkrel 7
+%define release %mkrel 8
 
 Name: 		perl-%{module}
 Version: 	%{version}
