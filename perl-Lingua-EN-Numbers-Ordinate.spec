@@ -1,17 +1,18 @@
-%define module	Lingua-EN-Numbers-Ordinate
-%define version 1.02
-%define release %mkrel 8
+%define upstream_name	 Lingua-EN-Numbers-Ordinate
+%define upstream_version 1.02
 
-Name: 		perl-%{module}
-Version: 	%{version}
-Release: 	%{release}
+Name: 		perl-%{upstream_name}
+Version: 	%perl_convert_version %{upstream_version}
+Release: 	%mkrel 1
+
 Summary:	Go from cardinal number (3) to ordinal ("3rd")
-License:	GPL or Artistic
+License:	GPL+ or Artistic
 Group:		Development/Perl
-URL:		http://search.cpan.org/dist/%{module}
-Source:		http://search.cpan.org/CPAN/modules/by-module/Lingua/%{module}-%{version}.tar.bz2
+Url:		http://search.cpan.org/dist/%{upstream_name}
+Source0:	http://search.cpan.org/CPAN/modules/by-module/Lingua/%{upstream_name}-%{upstream_version}.tar.bz2
+
 BuildArch:	noarch
-BuildRoot: 	%{_tmppath}/%{name}-%{version}
+BuildRoot: 	%{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 There are two kinds of numbers in English -- cardinals (1, 2, 3...), and
@@ -19,7 +20,7 @@ ordinals (1st, 2nd, 3rd...). This library provides functions for giving the
 ordinal form of a number, given its cardinal value.
 
 %prep
-%setup -q -n %{module}-%{version}
+%setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
