@@ -34,7 +34,7 @@ make test
 %makeinstall_std
 
 %files
-%doc README ChangeLog
+%doc README 
 %{perl_vendorlib}/Lingua
 %{_mandir}/*/*
 
