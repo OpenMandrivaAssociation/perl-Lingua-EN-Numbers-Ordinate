@@ -37,6 +37,3 @@ make test
 %doc README 
 %{perl_vendorlib}/Lingua
 %{_mandir}/*/*
-
-
-
