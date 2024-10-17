@@ -9,7 +9,7 @@ Summary:	Go from cardinal number (3) to ordinal ("3rd")
 
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{upstream_name}
+Url:		https://search.cpan.org/dist/%{upstream_name}
 Source0:	http://search.cpan.org/CPAN/modules/by-module/Lingua/%{upstream_name}-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
