@@ -1,16 +1,16 @@
 %define upstream_name	 Lingua-EN-Numbers-Ordinate
-%define upstream_version 1.03
+%define upstream_version 1.05
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	3
+Version:	%{upstream_version}
+Release:	1
 
 Summary:	Go from cardinal number (3) to ordinal ("3rd")
 
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://search.cpan.org/CPAN/modules/by-module/Lingua/%{upstream_name}-%{upstream_version}.tar.gz
+Url:		https://github.com/neilb/Lingua-EN-Numbers-Ordinate
+Source0:	https://cpan.metacpan.org/authors/id/N/NE/NEILB/Lingua-EN-Numbers-Ordinate-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
